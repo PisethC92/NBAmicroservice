@@ -15,7 +15,7 @@ To start the environment, please see steps below:
 
 4. Start the microservice: You can start the microservice by running the following command in the terminal (you'll want to cd to the directory first or provide the full path):
 
-    ```terminal
+    ```
     node .\randService.js
     ```
 
