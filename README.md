@@ -1,5 +1,5 @@
 # NBAmicroservice
-Repository for partner's microservice to their NBA stat app. Will generate a random player from a list of JSON
+Repository for partner's microservice to their NBA stat app. Will generate a random player from a list of JSON and return the full name of player as **text**
 
 To start the environment, please see steps below:
 
