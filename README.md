@@ -26,7 +26,7 @@ At this point, the service should be running and awaiting for requests. To test 
 
 As an example, once the server is running and listening, you can send the data through an HTTP post call. In python, you'll need to download and import the Request library.
 
-    ```Python3
+    ```Python
     import requests
 
     url = 'http://localhost:5001/random-select'
