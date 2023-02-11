@@ -20,3 +20,9 @@ To start the environment, please see steps below:
     ```
 
 At this point, the service should be running and awaiting for requests. To test the microservice you can make a POST request to this endpoint http://localhost:5000/random-select with the JSON data.
+
+
+UML Sequence:
+
+![image](https://user-images.githubusercontent.com/91227009/218266061-95ec319d-5a27-470a-8541-08a9038f6351.png)
+
