@@ -22,7 +22,14 @@ To start the environment, please see steps below:
 At this point, the service should be running and awaiting for requests. To test the microservice you can make a POST request to this endpoint http://localhost:5000/random-select with the JSON data.
 
 
-UML Sequence:
+**Request Data**
+
+As an example, once the server is running and listening, you can send the data through an HTTP post call. For python, you'll need to download the Request library.
+
+**Receive Data**
+
+
+**UML Sequence**:
 
 ![image](https://user-images.githubusercontent.com/91227009/218266061-95ec319d-5a27-470a-8541-08a9038f6351.png)
 
