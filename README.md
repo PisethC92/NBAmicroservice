@@ -22,11 +22,29 @@ To start the environment, please see steps below:
 At this point, the service should be running and awaiting for requests. To test the microservice you can make a POST request to this endpoint http://localhost:5000/random-select with the JSON data.
 
 
-**Request Data**
+**Request Data/Receive Data**
 
-As an example, once the server is running and listening, you can send the data through an HTTP post call. For python, you'll need to download the Request library.
+As an example, once the server is running and listening, you can send the data through an HTTP post call. In python, you'll need to download and import the Request library.
 
-**Receive Data**
+    ```
+    import requests
+
+    url = 'http://localhost:5001/random-select'
+    data = \
+        [
+        {"id": 1, "full_name": "Player 1"},
+        {"id": 2, "full_name": "Player 2"},
+        {"id": 3, "full_name": "Player 3"},
+        {"id": 4, "full_name": "Player 4"}
+    ]
+
+    response = requests.post(url, json=data)
+    print(response.text)
+    ```
+
+Above, I'm using the **post function** from the requests library and passing in the URL (API endpoint and the data as json). We **receive data** in the response from the server and in our example, stored in a variable called "response". In the payload received from the server, we can extract the text to get the 'full_name' attribute as a string and store it in another variable to use. In our example, i'm simply printing out the received data from the server.
+
+![image](https://user-images.githubusercontent.com/91227009/218275558-d74f8e31-c026-4590-a757-091368b6f02c.png)
 
 
 **UML Sequence**:
